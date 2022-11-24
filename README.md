@@ -59,18 +59,18 @@ http://www.tcpschool.com/xml/xml_xsd_intro
     - DTD은 예전부터 사용해 온 구식 방법이지만, 특유의 장점을 바탕으로 아직도 널리 사용되고 있다.
     - 이러한 DTD는 XML 문서 내부에 명시할 수도 있으며, 별도의 파일로 분리할 수도 있다.
 
-    * DTD의 사용목적은?
+    1. DTD의 사용목적은?
       - DTD를 사용하여 새로운 XML 문서의 구조를 정의함으로써 새로운 문서 타입을 만들 수 있다.
       - 이렇게 생성된 DTD는 새로운 문서 타입을 이용한 데이터의 교환에서 표준으로써 활용된다.
       - 또한, 응용 프로그램은 DTD의 정의에 따라 XML 문서의 구문 및 구조에 대한 유효성을 검사할 수 있다.
-    * DTD 문법
+    2. DTD 문법
         - XML에서 DTD를 작성하는 문법을 간단히 소개하자면 다음과 같다.   
           <!DCOTYPE 루트요소 DTD 식별자 [선언1 선언2 ... ]>
         - DTD는 '<!DOCTYPE' 으로 시작한다.
         - 루트(root)요소는 XML 파서(parser)에 명시된 루트 요소부터 파싱(parsing)을 시작하라고 알려주는 역할을 한다.
         - DTD 식별자는 프로그램 외부에 존재하는 DTD 파일을 위한 식별자이다.
 
-    * Disadvantages
+    3. Disadvantages
         - No support for Namespace.
         - Not written in XML syntax. (Should learn new syntax for DTD)
         - Support limited types.

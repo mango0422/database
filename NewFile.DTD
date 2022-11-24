@@ -1,0 +1,8 @@
+<!ELEMENT class (student*)>
+<!ELEMENT student
+(firstname,lastname,nickname,marks)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT nickname (#PCDATA)>
+<!ELEMENT marks (#PCDATA)>
+<!ATTLIST student rollno CDATA #IMPLIED>
