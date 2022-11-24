@@ -100,7 +100,10 @@ https://gobae.tistory.com/95
     - xmlns:xs 속성은 XSD의 요소와 타입에 사용할 W3C의 XML 스키마 네임스페이스를 명시합니다.
     - targetNamespace 속성은 요소를 정의할 XML 스키마 네임스페이스를 명시합니다.
     - xmlns 속성은 기본 XML 스키마 네임스페이스를 명시합니다.
+    - 
     - elementFormDefault 속성은 해당 스키마를 이용해 선언한 XML 문서의 모든 요소가 네임스페이스를 만족한다는 것을 명시합니다.
+    - XSD에서 속성을 선언하는 문법 : <xs:attribute name="속성이름" type="속성타입"/>
+    - 
     <h2> 코드 예시</h2>
 
         ```
