@@ -54,10 +54,8 @@ https://gobae.tistory.com/95
        - 이 지원을 통해 XML 파일과 직접 작동하는 다른 언어로 프로그램을 쉽게 작성할 수 있다.   
      5. 예시
      <img src="./xml_자료조사\\Exercise1_DomParserDemo.java.png">
-      - ↑출력을 위한 자바 코드
      <img src="./xml_자료조사\\Exercise1_NewFile.xml.png" width="45%" height="45%">
      <img src="./xml_자료조사\\Exercise1_DomParserDemo.java_result.png">
-      - ↑xml 예시 코드                ↑
     
 <br/><br/>
 
