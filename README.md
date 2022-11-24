@@ -54,7 +54,7 @@ https://www.ibm.com/docs/en/i/7.5?topic=introduction-uses-xml
      5. 예시
      <img src="./xml_자료조사\\Exercise1_DomParserDemo.java.png">
      <img src="./xml_자료조사\\Exercise1_NewFile.xml.png">
-     <img src="./xml_자료조사\\Exercise1_DomParserDemo.java.png">
+     <img src="./xml_자료조사\\Exercise1_DomParserDemo.java_result.png">
     
 <br/><br/>
 
