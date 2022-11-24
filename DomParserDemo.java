@@ -1,4 +1,5 @@
 import java.io.File;
+// import XML-related packages
 import javax.xml.parsers.*;
 import org.w3c.dom.*;
 
@@ -7,6 +8,7 @@ public class DomParserDemo {
 		try {
 			File inputFile = new File("NewFile.xml");
 			
+			// Create a DocumentBuilder
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			

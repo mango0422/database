@@ -1,0 +1,16 @@
+{
+    "clubname": "chelsea",
+    "country": "England",
+    "members": [
+        {
+            "name": "Drogba",
+            "age": 25,
+            "position": "foward"
+        },
+        {
+            "name": "Cech",
+            "age": 24,
+            "position": "goalKeeper"
+        },
+        ],
+}

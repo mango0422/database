@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<football club="첼시" type="축구선수">
+    <player>
+        <name>램파드</name>
+        <position>미드필더</position>
+        <age>27</age>
+    </player>
+    <player>
+        <name>드록바</name>
+        <position>공격수</position>
+        <age>25</age>
+    </player>
+</football>

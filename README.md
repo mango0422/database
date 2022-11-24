@@ -12,6 +12,7 @@ https://namu.wiki/w/XML
 https://namu.wiki/w/YAML#s-5
 https://namu.wiki/w/JSON#s-3
 https://www.ibm.com/docs/en/i/7.5?topic=introduction-uses-xml
+https://gobae.tistory.com/95
 <br/><br/>
 
 # 1. xml
@@ -140,43 +141,62 @@ https://www.ibm.com/docs/en/i/7.5?topic=introduction-uses-xml
 # 4. Describe recent trend 
 원래는 웹에서 사용할 목적으로 만들어졌으나,웹환경이 아닌 일반 TCP/IP 네트워크 통신을 할 때에도 점점 사용빈도가 늘어나고 있는 추세이다.
 
-과거 웹 초기 시절부터 사용되어 온 XML은 헤더와 태그 등의 여러 요소로 가독성이 떨어지고,
-데이터의 
 1. JSON
-    - XML과 비슷하게 데이터를 처리하기 위한 형식이다.
-    - 일반적으로 서버와의 통신 규약인 REST API를 사용할 때 가장 많이 사용되어, 최근에는 XML보다는 JSON 형식이 채택되고 있다.
-    - 사실상 모든 프로그래밍 언어에서 JSON을 지원한다는 점에서 XML과 YAML에 비해서 채택률이 높아지고 있다.
-    - JSON은 주석을 사용할 수 없다.
-    - XML을 JSON형식으로 변환하면 다음과 같다.
-        <h2> XML</h2>
+    1. 특징
+        - XML과 비슷하게 데이터를 처리하기 위한 형식이다.
+        - js 객체 표기법
+        - 일반적으로 서버와의 통신 규약인 REST API를 사용할 때 가장 많이 사용되어, 최근에는 XML보다는 JSON 형식이 채택되고 있다.
+        - 사실상 모든 프로그래밍 언어에서 JSON을 지원한다는 점에서 XML과 YAML에 비해서 채택률이 높아지고 있다.
+        - JSON은 주석을 사용할 수 없다.
+        - XML을 JSON형식으로 변환하면 다음과 같다.
+            <h2> XML</h2>
 
-        ```
-        <?xml version="1.0" encoding="UTF-8"?>
-        <class>
-            <student rollno = "393">
-                <firstname>dinkar</firstname>
-                <lastname>kad</lastname>
-                <nickname>dinkar</nickname>
-                <marks>85</marks>
-            </student>
-            <student rollno = "493">
-                <firstname>Vaneet</firstname>
-                <lastname>Gupta</lastname>
-                <nickname>vinni</nickname>
-                <marks>95</marks>
-            </student>
-            <student rollno = "593">
-                <firstname>jasvir</firstname>
-                <lastname>singn</lastname>
-                <nickname>jazz</nickname>
-                <marks>90</marks>
-            </student>
-        </class>
-        ```
-                <h2> XML</h2>
+            ```
+            <?xml version="1.0" encoding="UTF-8"?> // xml 버전과 인코딩 정보
+            <class>  // root 태그
+                <student rollno = "393">
+                    <firstname>dinkar</firstname>
+                    <lastname>kad</lastname>
+                    <nickname>dinkar</nickname>
+                    <marks>85</marks>
+                </student>
+                <student rollno = "493">
+                    <firstname>Vaneet</firstname>
+                    <lastname>Gupta</lastname>
+                    <nickname>vinni</nickname>
+                    <marks>95</marks>
+                </student>
+                <student rollno = "593">
+                    <firstname>jasvir</firstname>
+                    <lastname>singn</lastname>
+                    <nickname>jazz</nickname>
+                    <marks>90</marks>
+                </student>
+            </class>
+            ```
+            <h2> XML</h2>
 
-        ```
-        
-        ```
+            ```
+            
+            ```
+    2. xml과 비교
+        * json은 문법 오류에 취약함.
+            - 반면 xml은 일부 표기에 오타가 들어가도, 그 외의 것들을 읽는데 문제가 없음.
+        * xml은 각 사용처마다 요구되는 구조와 형태를 잘 갖췄는지 스키마를 통해 검증이 가능하다.
+            - xsd... 그러나 json은 자체적으로는 이러한 기능이 없기 때문에, 직접 프로그래밍 해서 만들어야 함.
+        * 이와 같은 각각의 장단점을 고려해서 안정성이 요구되는 곳에는 xml이, 가벼움을 중시하는 곳에는 json이 활용됨.
+         - 데이터를 주고 받을 때, 웹 서비스 설정 파일을 작성할 때, 모바일앱의 ui를 설계할때 등등.. 많은 곳에서 xml과 json을 주고 받을 수 있음.
+
 2. Yaml (Yet Another Markup Language, Yet Ain't Markup Language)
     - JSON의 단점을 보완하고자 만든 superset이다.
+    - 파이썬처럼 줄바꿈과 태그가 필수 요소이다.
+    - 문법에 알맞지 않으면 정보가 파괴되기 때문에, YAML 문서는 Unify하지 않다.
+    - 사람의 편의를 우선시하는 YAML이기 때문에, 도커 컴포즈나 스프링등의 설정파일에 많이 사용된다.
+
+
+
+        |항목|XML|JSON|YAML|
+        |---|---|---|---|
+        |메타 데이터의 비중(메타 데이터 : 실질 데이터 외에 추가되는 외적인 정보들|높음(XML 태그 때문)|낮음|낮음|
+        |파싱(Parsing)의 편의성|낮음 (SAX, DOM, Reader 모두 JSON과 비교했을 때 불편함)|높음 (JSON 문서를 '객체'나 '다중 배열' 로 즉각 변환 가능)|
+        |테스트1|테스트2|테스트3|
