@@ -6,6 +6,7 @@ http://www.tcpschool.com/xml/xml_dtd_intro
 http://www.tcpschool.com/xml/xml_xsd_intro
 
 <br/><br/>
+
 # 1. xml
 
 1. xml이란 무엇인가?  
@@ -44,6 +45,7 @@ http://www.tcpschool.com/xml/xml_xsd_intro
        - 많은 프로그래밍 언어에서 XML을 데이터 유형으로 지원한다.   
        - 이 지원을 통해 XML 파일과 직접 작동하는 다른 언어로 프로그램을 쉽게 작성할 수 있다.   
 <br/><br/>
+
 # 2. DTD란?
 
 1. 정의
@@ -69,7 +71,6 @@ http://www.tcpschool.com/xml/xml_xsd_intro
         - Support limited types.
         - No reuse or expand.
         => To solve these advantages, W3C announced a new Schema langauge, XSD, in 2001.
-
 <br/><br/>
 
 # 3. What is XML Schema Definition (XSD)?
@@ -87,46 +88,83 @@ http://www.tcpschool.com/xml/xml_xsd_intro
     - targetNamespace 속성은 요소를 정의할 XML 스키마 네임스페이스를 명시합니다.
     - xmlns 속성은 기본 XML 스키마 네임스페이스를 명시합니다.
     - elementFormDefault 속성은 해당 스키마를 이용해 선언한 XML 문서의 모든 요소가 네임스페이스를 만족한다는 것을 명시합니다.
-# 코드 예시
-    ```
-    <?xml version="1.0" encoding="ISO-8859-1" ?>
-    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="shiporder">
-    <xs:complexType>
-        <xs:attribute name="orderid" type="xs:string" use="required"/>
-        <xs:sequence>
-        <xs:element name="orderperson" type="xs:string"/>
-        <xs:element name="shipto">
-            <xs:complexType>
-            <xs:sequence>
-                <xs:element name="name" type="xs:string"/>
-                <xs:element name="address" type="xs:string"/>
-                <xs:element name="city" type="xs:string"/>
-                <xs:element name="country" type="xs:string"/>
-            </xs:sequence>
-            </xs:complexType>
-        </xs:element>
-        <xs:element name="item" maxOccurs="unbounded">
-            <xs:complexType>
-            <xs:sequence>
-                <xs:element name="title" type="xs:string"/>
-                <xs:element name="note" type="xs:string" minOccurs="0"/>
-                <xs:element name="quantity" type="xs:positiveInteger"/>
-                <xs:element name="price" type="xs:decimal"/>
-            </xs:sequence>
-            </xs:complexType>
-        </xs:element>
-        </xs:sequence>
-    </xs:complexType>
-    </xs:element>
-    </xs:schema>
-    ```
+    <h2> 코드 예시</h2>
 
+        ```
+        <?xml version="1.0" encoding="ISO-8859-1" ?>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:element name="shiporder">
+        <xs:complexType>
+            <xs:attribute name="orderid" type="xs:string" use="required"/>
+            <xs:sequence>
+            <xs:element name="orderperson" type="xs:string"/>
+            <xs:element name="shipto">
+                <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="address" type="xs:string"/>
+                    <xs:element name="city" type="xs:string"/>
+                    <xs:element name="country" type="xs:string"/>
+                </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="item" maxOccurs="unbounded">
+                <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="title" type="xs:string"/>
+                    <xs:element name="note" type="xs:string" minOccurs="0"/>
+                    <xs:element name="quantity" type="xs:positiveInteger"/>
+                    <xs:element name="price" type="xs:decimal"/>
+                </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+        </xs:schema>
+        ```
 <br/><br/>
 
 # 4. Describe recent trend 
+원래는 웹에서 사용할 목적으로 만들어졌으나,웹환경이 아닌 일반 TCP/IP 네트워크 통신을 할 때에도 점점 사용빈도가 늘어나고 있는 추세이다.
 
+과거 웹 초기 시절부터 사용되어 온 XML은 헤더와 태그 등의 여러 요소로 가독성이 떨어지고,
+데이터의 
 1. JSON
-    - 
+    - XML과 비슷하게 데이터를 처리하기 위한 형식이다.
+    - 일반적으로 서버와의 통신 규약인 REST API를 사용할 때 가장 많이 사용되어, 최근에는 XML보다는 JSON 형식이 채택되고 있다.
+    - 사실상 모든 프로그래밍 언어에서 JSON을 지원한다는 점에서 XML과 YAML에 비해서 채택률이 높아지고 있다.
+    - JSON은 주석을 사용할 수 없다.
+    - XML을 JSON형식으로 변환하면 다음과 같다.
+        <h2> XML</h2>
+
+        ```
+        <?xml version="1.0" encoding="UTF-8"?>
+        <class>
+            <student rollno = "393">
+                <firstname>dinkar</firstname>
+                <lastname>kad</lastname>
+                <nickname>dinkar</nickname>
+                <marks>85</marks>
+            </student>
+            <student rollno = "493">
+                <firstname>Vaneet</firstname>
+                <lastname>Gupta</lastname>
+                <nickname>vinni</nickname>
+                <marks>95</marks>
+            </student>
+            <student rollno = "593">
+                <firstname>jasvir</firstname>
+                <lastname>singn</lastname>
+                <nickname>jazz</nickname>
+                <marks>90</marks>
+            </student>
+        </class>
+        ```
+                <h2> XML</h2>
+
+        ```
+        
+        ```
 2. Yaml (Yet Another Markup Language, Yet Ain't Markup Language)
     - JSON의 단점을 보완하고자 만든 superset이다.
