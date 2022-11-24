@@ -4,7 +4,14 @@ http://www.tcpschool.com/xml/xml_intro_basic
 https://aws.amazon.com/ko/what-is/xml/   
 http://www.tcpschool.com/xml/xml_dtd_intro   
 http://www.tcpschool.com/xml/xml_xsd_intro
-
+https://byul91oh.tistory.com/302
+https://www.coovil.net/xml-vs-json/
+https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
+https://aws.amazon.com/ko/what-is/restful-api/
+https://namu.wiki/w/XML
+https://namu.wiki/w/YAML#s-5
+https://namu.wiki/w/JSON#s-3
+https://www.ibm.com/docs/en/i/7.5?topic=introduction-uses-xml
 <br/><br/>
 
 # 1. xml
@@ -45,9 +52,9 @@ http://www.tcpschool.com/xml/xml_xsd_intro
        - 많은 프로그래밍 언어에서 XML을 데이터 유형으로 지원한다.   
        - 이 지원을 통해 XML 파일과 직접 작동하는 다른 언어로 프로그램을 쉽게 작성할 수 있다.   
      5. 예시
-     <img src="./Exercise1_DomParserDemo.java.png">
-     <img src="./Exercise1_NewFile.xml.png">
-     <img src="./Exercise1_DomParserDemo.java.png">
+     <img src="./xml_자료조사\\Exercise1_DomParserDemo.java.png">
+     <img src="./xml_자료조사\\Exercise1_NewFile.xml.png">
+     <img src="./xml_자료조사\\Exercise1_DomParserDemo.java.png">
     
 <br/><br/>
 
