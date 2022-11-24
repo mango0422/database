@@ -199,7 +199,7 @@ https://gobae.tistory.com/95
                             "-rollno": "593",
                             "firstname": "jasvir",
                             "lastname": "singn",
-                            "nickname": "jazz",
+                            "nickname": "jazz",`
                             "marks": "90"
                         }
                     ]
@@ -212,7 +212,8 @@ https://gobae.tistory.com/95
         2. xml은 각 사용처마다 요구되는 구조와 형태를 잘 갖췄는지 스키마를 통해 검증이 가능하다.
             - xsd... 그러나 json은 자체적으로는 이러한 기능이 없기 때문에, 직접 프로그래밍 해서 만들어야 함.
         3. 이와 같은 각각의 장단점을 고려해서 안정성이 요구되는 곳에는 xml이, 가벼움을 중시하는 곳에는 json이 활용됨.
-         - 데이터를 주고 받을 때, 웹 서비스 설정 파일을 작성할 때, 모바일앱의 ui를 설계할때 등등.. 많은 곳에서 xml과 json을 주고 받을 수 있음.
+            - 즉, 데이터의 형식적 무결성 확보 측면에서 json보다 xml이 훨씬 안정적이며,
+            - 데이터를 주고 받을 때, 웹 서비스 설정 파일을 작성할 때, 모바일앱의 ui를 설계할때 등등.. 많은 곳에서 xml과 json을 주고 받을 수 있음.
 
 2. Yaml (Yet Another Markup Language, Yet Ain't Markup Language)
     - JSON의 단점을 보완하고자 만든 superset이다.
@@ -221,3 +222,13 @@ https://gobae.tistory.com/95
     - 사람의 편의를 우선시하는 YAML이기 때문에, 도커 컴포즈나 스프링등의 설정파일에 많이 사용된다.
     - XML, JSON과 달리, 공백위주로 데이터를 구분하므로 한 줄로 작성할 수 없다는 특징이 있다.
     - Swagger API, Spring Boot, Docket등의 굉장히 많은 환경에서 설정(Conf) 파일 작성을 목적으로 YAML을 사용한다.
+
+</br></br>
+
+# 그 외에... REST
+1. Rest란?
+    - "Representatinal State Transfer"의 약자
+    - 자원을 이름(자원의 표현)으로 구분하여 해당 자원의 상태(정보)를 주고 받는 모든 것을 의미한다.
+    - 월드 와이드 웹(www)과 같은 분산 하이퍼미디어 시스템을 위한 소프트웨어 개발 아키텍처의 한 형식
+    - REST는 네트워크 상에서 Client와 Server 사이의 통신 방식 중 하나이다.
+    - JSON 혹은 XML을 통해 데이털르 주고 받는 것이 일반적이다.
