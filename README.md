@@ -53,9 +53,9 @@ https://gobae.tistory.com/95
        - 많은 프로그래밍 언어에서 XML을 데이터 유형으로 지원한다.   
        - 이 지원을 통해 XML 파일과 직접 작동하는 다른 언어로 프로그램을 쉽게 작성할 수 있다.   
      5. 예시
-     <img src="./xml_자료조사\\Exercise1_DomParserDemo.java.png" width="50%" height="50%">
+     <img src="./xml_자료조사\\Exercise1_DomParserDemo.java.png">
      <img src="./xml_자료조사\\Exercise1_NewFile.xml.png" width="50%" height="50%">
-     <img src="./xml_자료조사\\Exercise1_DomParserDemo.java_result.png" width="50%" height="50%">
+     <img src="./xml_자료조사\\Exercise1_DomParserDemo.java_result.png">
     
 <br/><br/>
 
