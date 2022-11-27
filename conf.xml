@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <name>Rust</name>
+    <on>
+        <push>
+            <branches>master</branches>
+        </push>
+        <pull_request>
+            <branches>master</branches>
+        </pull_request>
+    </on>
+    <env>
+        <CARGO_TERM_COLOR>always</CARGO_TERM_COLOR>
+    </env>
+    <jobs>
+        <build>
+            <runs-on>ubuntu-latest</runs-on>
+            <steps>
+                <uses>actions/checkout@v2</uses>
+            </steps>
+            <steps>
+                <name>Build</name>
+                <run>cargo build --verbose</run>
+            </steps>
+            <steps>
+                <name>Run tests</name>
+                <run>cargo test --verbose</run>
+            </steps>
+        </build>
+    </jobs>
+</root>​

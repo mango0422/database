@@ -1,18 +1,18 @@
 # XML
 출처 :    
 http://www.tcpschool.com/xml/xml_intro_basic   
-https://aws.amazon.com/ko/what-is/xml/   
+https://aws.amazon.com/ko/what-is/xml/    
 http://www.tcpschool.com/xml/xml_dtd_intro   
-http://www.tcpschool.com/xml/xml_xsd_intro
-https://byul91oh.tistory.com/302
-https://www.coovil.net/xml-vs-json/
-https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html
-https://aws.amazon.com/ko/what-is/restful-api/
-https://namu.wiki/w/XML
-https://namu.wiki/w/YAML#s-5
-https://namu.wiki/w/JSON#s-3
-https://www.ibm.com/docs/en/i/7.5?topic=introduction-uses-xml
-https://gobae.tistory.com/95
+http://www.tcpschool.com/xml/xml_xsd_intro  
+https://byul91oh.tistory.com/302  
+https://www.coovil.net/xml-vs-json/  
+https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html  
+https://aws.amazon.com/ko/what-is/restful-api/  
+https://namu.wiki/w/XML  
+https://namu.wiki/w/YAML#s-5  
+https://namu.wiki/w/JSON#s-3  
+https://www.ibm.com/docs/en/i/7.5?topic=introduction-uses-xml  
+https://gobae.tistory.com/95  
 <br/><br/>
 
 # 1. xml
@@ -78,7 +78,7 @@ https://gobae.tistory.com/95
         - 루트(root)요소는 XML 파서(parser)에 명시된 루트 요소부터 파싱(parsing)을 시작하라고 알려주는 역할을 한다.
         - DTD 식별자는 프로그램 외부에 존재하는 DTD 파일을 위한 식별자이다.
 
-    3. Disadvantages
+    3. Disadvantageshttps://github.com/mango0422/database
         - No support for Namespace.
         - Not written in XML syntax. (Should learn new syntax for DTD)
         - Support limited types.
